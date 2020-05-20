@@ -17,6 +17,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/test", EsTest)
 	router.Run(":10086")
+	// todo 完善逻辑
 }
 
 var client *elastic.Client
